@@ -17,7 +17,7 @@ const empSchema = mongoose.Schema({
     salary: {
         type: String,
         required: true
-    }, // e.g., open, closed, awarded
+    }
 });
 
 
