@@ -1,31 +1,27 @@
 const mongoose = require('mongoose');
 
-const tenderSchema = mongoose.Schema({
-    tenderName: {
+const empSchema = mongoose.Schema({
+    id: {
         type: String,
         required: true
     },
 
-    description: {
+    name: {
         type: String,
         required: true
     },
-    startTime: {
+    position: {
         type: String,
         required: true
     },
-    endTime: {
+    salary: {
         type: String,
         required: true
     }, // e.g., open, closed, awarded
-    bufferTime: {
-        type: String,
-        required: true
-    },
 });
 
 
 
-const Tender = mongoose.model('Tender', tenderSchema);
+const Emp = mongoose.model('Employee Data', empSchema);
 
-module.exports = Tender
+module.exports = Emp

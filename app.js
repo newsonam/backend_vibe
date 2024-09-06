@@ -8,5 +8,5 @@ dotenv.config({path:'./config.env'});
 const PORT=process.env.PORT;
 const bodyParser = require('body-parser');
 app.use(bodyParser.json());
-app.use(require('./router/tenderroutes'));
+app.use(require('./router/emproutes'));
 app.listen(PORT);
